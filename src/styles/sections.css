@@ -1828,6 +1828,7 @@
   .about__grid { grid-template-columns: 1fr 1.2fr; gap: 48px; }
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
   .contact__grid { grid-template-columns: 1fr; gap: 48px; }
+  .certifications__grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 }
 
 @media (max-width: 768px) {
@@ -1837,8 +1838,53 @@
   .projects__grid { grid-template-columns: 1fr; }
   .internship__grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
-  .contact__form-wrap { padding: 24px; }
-  .timeline { padding-left: 28px; }
-  .timeline::before { left: 6px; }
-  .timeline-item__dot { left: -28px; }
+  .contact__form-wrap { padding: 24px 20px; }
+  .timeline { padding-left: 24px; }
+  .timeline::before { left: 4px; }
+  .timeline-item__dot { left: -24px; width: 16px; height: 16px; top: 8px; }
+  .timeline-item__card { padding: 20px 18px; }
+  .timeline-item__header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .timeline-item__meta { align-items: flex-start; }
+  .education-card { padding: 20px 18px; gap: 16px; }
+  .education-card__header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .certifications__grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .cert-card { padding: 18px; }
+  .cert-modal { padding: 12px; }
+  .cert-modal__content { max-height: 94vh; }
+  .cert-modal__header { padding: 16px 20px 12px; }
+  .cert-modal__header h3 { font-size: 17px; }
+  .cert-modal__image-wrap { padding: 12px; }
+  .cert-modal__footer { padding: 12px 16px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .resume-cta { padding: 64px 0; }
+  .resume-cta__sub { margin-bottom: 28px; font-size: 15px; }
+  .footer__back-top { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .about__photo-frame { width: 200px; height: 200px; }
+  .about__heading { font-size: 26px; }
+  .about__paragraphs p { font-size: 14.5px; }
+  .skills__tabs { gap: 6px; }
+  .skills__tab { padding: 6px 14px; font-size: 12.5px; }
+  .skills__grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+  .skill-card { padding: 16px 10px; gap: 8px; }
+  .skill-card__icon { width: 40px; height: 40px; font-size: 20px; }
+  .timeline-item__company { font-size: 16px; }
+  .timeline-item__role { font-size: 13.5px; }
+  .timeline-item__responsibilities li { font-size: 13.5px; }
+  .internship-card { padding: 20px 16px; }
+  .internship-card__company { font-size: 18px; }
+  .education-card { flex-direction: column; align-items: flex-start; }
+  .education-card__icon { width: 44px; height: 44px; }
+  .education-card__degree { font-size: 16px; }
+  .projects__filters { gap: 6px; }
+  .projects__filter { padding: 6px 14px; font-size: 12.5px; }
+  .project-card__body { padding: 18px 16px; }
+  .project-card__footer { flex-direction: column; gap: 8px; padding: 14px 16px; }
+  .project-card__footer .btn { width: 100%; justify-content: center; }
+  .contact__form-wrap { padding: 18px 14px; }
+  .contact__form-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .whatsapp-quick-btn { width: 100%; justify-content: center; }
+  .footer__main { gap: 28px; padding-bottom: 36px; }
+  .footer__nav-list { grid-template-columns: 1fr; }
 }

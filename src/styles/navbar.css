@@ -217,6 +217,8 @@
   border-radius: var(--radius-xl);
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(124, 58, 237, 0.08);
   padding: 18px;
+  max-height: calc(85vh - 70px);
+  overflow-y: auto;
   opacity: 0;
   transform: translateY(-8px) scale(0.98);
   pointer-events: none;
@@ -305,5 +307,29 @@
   }
   .navbar-wrapper--scrolled {
     padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-wrapper {
+    padding: 8px 12px;
+  }
+  .navbar-wrapper--scrolled {
+    padding: 6px 8px;
+  }
+  .navbar__inner {
+    padding: 4px 10px;
+    height: 50px;
+  }
+  .navbar__logo-name {
+    font-size: 14px;
+  }
+  .navbar__logo-role {
+    font-size: 10px;
+  }
+  .navbar__logo-badge {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
   }
 }
