@@ -128,8 +128,6 @@ export default function Hero({ personalInfo }) {
     return () => hero.removeEventListener('mousemove', onMove);
   }, []);
 
-  const displayName = personalInfo.name;
-
   return (
     <section id="home" className="hero" aria-label="Hero section">
       <div className="container">
@@ -143,7 +141,7 @@ export default function Hero({ personalInfo }) {
 
             <h1 className="hero__heading">
               <span className="hero__heading-name">Hi, I&apos;m</span>
-              <span className="hero__heading-name" style={{ color: 'var(--color-text)' }}>{displayName}</span>
+              <span className="hero__heading-name" style={{ color: 'var(--color-text)' }}>{personalInfo.name}</span>
               <span className="hero__heading-role shimmer-text">Frontend Developer</span>
             </h1>
 

@@ -23,7 +23,7 @@ export default function ResumeCTA({ personalInfo }) {
               <LuDownload size={17} />
               Download Resume
             </a>
-            <a href="#contact" className="btn btn--lg" style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.5)' }} aria-label="Go to Contact section">
+            <a href="#contact" className="btn btn--lg btn--cta-outline" aria-label="Go to Contact section">
               <LuSend size={16} />
               Contact Me
             </a>

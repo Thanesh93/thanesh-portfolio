@@ -11,7 +11,7 @@ import {
   FaLocationDot,
 } from 'react-icons/fa6';
 
-import { LuSend, LuLoader } from 'react-icons/lu';
+import { LuLoader } from 'react-icons/lu';
 
 function ContactInfo({ personalInfo }) {
   const cleanPhone = (personalInfo.phone || '').replace(/[^0-9]/g, '');
@@ -292,8 +292,6 @@ function ContactForm({ personalInfo }) {
           ⚡ Submitting will instantly format and transfer your message directly to Thanesh&apos;s WhatsApp (+91 93453 95315).
         </p>
       </form>
-
-      <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
     </div>
   );
 }

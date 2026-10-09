@@ -102,7 +102,14 @@ export default function Certifications({ certifications }) {
 
       {/* Lightbox Modal */}
       {selectedCert && (
-        <div className="cert-modal" role="dialog" aria-modal="true" onClick={() => setSelectedCert(null)}>
+        <div
+          className="cert-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="cert-modal-title"
+          onClick={() => setSelectedCert(null)}
+          onKeyDown={(e) => e.key === 'Escape' && setSelectedCert(null)}
+        >
           <div className="cert-modal__content" onClick={(e) => e.stopPropagation()}>
             <button
               className="cert-modal__close"
@@ -112,7 +119,7 @@ export default function Certifications({ certifications }) {
               <LuX size={18} />
             </button>
             <div className="cert-modal__header">
-              <h3>{selectedCert.name}</h3>
+              <h3 id="cert-modal-title">{selectedCert.name}</h3>
               <p>{selectedCert.issuer} — {selectedCert.date}</p>
             </div>
             <div className="cert-modal__image-wrap">

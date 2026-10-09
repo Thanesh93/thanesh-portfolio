@@ -2,9 +2,6 @@
    GLOBAL CSS — Design System Tokens + Base Styles
    ============================================================ */
 
-/* --- Google Fonts Import Fallback --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   /* Colors */
@@ -485,6 +482,12 @@ input, textarea, select {
 @keyframes pulseGlowSlow {
   0%, 100% { box-shadow: 0 0 15px rgba(124, 58, 237, 0.2); }
   50% { box-shadow: 0 0 30px rgba(124, 58, 237, 0.45); }
+}
+
+/* --- Spin (used by loader spinner) --- */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* --- Responsive Breakpoints --- */

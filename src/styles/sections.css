@@ -1204,6 +1204,19 @@
   flex-wrap: wrap;
 }
 
+.btn--cta-outline {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn--cta-outline:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* ========== CONTACT ========== */
 .contact {
   background: var(--color-bg);

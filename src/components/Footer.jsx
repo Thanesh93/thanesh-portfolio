@@ -6,14 +6,14 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaEnvelope,
-  FaPhone,
   FaLocationDot,
   FaChevronUp,
 } from 'react-icons/fa6';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export default function Footer({ personalInfo }) {
   const [showBackTop, setShowBackTop] = useState(false);
-  const year = new Date().getFullYear();
 
   useEffect(() => {
     const onScroll = () => setShowBackTop(window.scrollY > 400);
@@ -159,7 +159,7 @@ export default function Footer({ personalInfo }) {
           {/* Bottom Bar */}
           <div className="footer__bottom">
             <p className="footer__copyright">
-              &copy; {year} <strong style={{ color: 'var(--color-white)' }}>{personalInfo.name}</strong>. All rights reserved.
+              &copy; {CURRENT_YEAR} <strong style={{ color: 'var(--color-white)' }}>{personalInfo.name}</strong>. All rights reserved.
             </p>
           </div>
         </div>

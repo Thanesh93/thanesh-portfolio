@@ -121,7 +121,7 @@ export const internships = [
     company: "Zetamind Technology",
     location: "Nagercoil",
     role: "React Development Intern",
-    duration: "Nagercoil",
+    duration: "2024 (Duration Unspecified)",
     technologies: ["React.js", "JavaScript", "CSS3", "Component Architecture"],
     responsibilities: [
       "Gained practical experience in React.js development and component-based architecture.",
